@@ -35,15 +35,15 @@ bool verifyPassword(string str1,string str2)
 }
 int main()
 {
-    bool a ;
+  int a ;
     string str1;
     string str2;
     str1 = writePassword();
     str2 = getPassword();
-    a = verifyPassword(str1,str2);
-    if (a == true)
+    a = str1.compare(str2);
+    if (a == 0)
         cout << "password is verified" << endl;
-    if (a == false)
+   else
         cout << "password is not verified" << endl;
     return 0;
 }
